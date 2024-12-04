@@ -6,14 +6,14 @@
 #    By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/03 19:33:02 by mlata             #+#    #+#              #
-#    Updated: 2024/12/04 14:41:23 by mlata            ###   ########.fr        #
+#    Updated: 2024/12/04 15:14:31 by mlata            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
