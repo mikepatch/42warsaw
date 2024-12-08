@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+         #
+#    By: michallata <michallata@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/03 19:33:02 by mlata             #+#    #+#              #
-#    Updated: 2024/12/05 19:55:10 by mlata            ###   ########.fr        #
+#    Updated: 2024/12/08 00:14:14 by michallata       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
