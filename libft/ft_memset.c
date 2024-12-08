@@ -18,13 +18,10 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char	*s_unsigned;
 	unsigned char	c_unsigned;
 
-	if ((s == NULL && n > 0) || n == 0)
-		return (NULL);
-
 	s_unsigned = (unsigned char *)s;
 	c_unsigned = (unsigned char)c;
 	i = 0;
-	while (i <= n)
+	while (i < n)
 	{
 		s_unsigned[i] = c_unsigned;
 		i++;
