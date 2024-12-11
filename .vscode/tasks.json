@@ -4,11 +4,7 @@
 		{
 			"label": "build",
 			"command": "clang",
-			"args": [
-				"get_next_line.c",
-				"get_next_line_utils.c",
-				"-g"
-			],
+			"args": ["get_next_line.c", "get_next_line_utils.c", "-g"],
 			"type": "shell",
 			"presentation": {
 				"echo": true,
@@ -17,10 +13,7 @@
 			},
 			"problemMatcher": {
 				"owner": "c",
-				"fileLocation": [
-					"relative",
-					"${workspaceRoot}"
-				],
+				"fileLocation": ["relative", "${workspaceRoot}"],
 				"pattern": {
 					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
 					"file": 1,
