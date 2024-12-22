@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 11:39:35 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/22 20:57:47 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/22 21:01:37 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char	*ft_strchr(const char *s, int c);
 char	*strrchr(const char *s, int c);
