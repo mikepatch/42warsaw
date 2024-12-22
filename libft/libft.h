@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 11:39:35 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/22 17:41:07 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/22 18:02:36 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
