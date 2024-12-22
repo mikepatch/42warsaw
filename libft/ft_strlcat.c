@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 02:51:18 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/11 03:26:14 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/22 17:44:21 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	src_len = ft_strlen(src);
 	if (dstsize == 0)
-		return src_len;
+		return (src_len);
 	dst_len = ft_strlen(dst);
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
-	// if (dst_len >= dstsize)
-	// 	return (dstsize + src_len);
 	i = 0;
 	while (src[i] != '\0' && (dst_len + i) < (dstsize - 1))
 	{
