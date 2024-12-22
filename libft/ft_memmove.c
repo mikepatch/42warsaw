@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 21:28:42 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/11 02:47:07 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/22 17:42:57 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	{
 		i = len;
 		while (i--)
-			d[i ] = s[i];
+			d[i] = s[i];
 	}
 	return (dst);
 }
