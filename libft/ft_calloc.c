@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 02:46:30 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/24 02:58:18 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/26 05:43:49 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	total_size;
-	size_t	i;
 	char	*ptr;
 
 	total_size = count * size;
@@ -24,11 +23,6 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = (char *)malloc(total_size);
 	if (!ptr)
 		return (NULL);
-	i = 0;
-	while (i < total_size)
-	{
-		ptr[i] = 0;
-		i++;
-	}
+	ft_bzero(ptr, total_size);
 	return (ptr);
 }
