@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 02:00:15 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/28 02:37:57 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/28 02:53:24 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
 
+	if (!s)
+		return;
 	i = 0;
-	if (s)
+	while (s[i])
 	{
-		while (s[i])
-		{
-			f(i, &s[i]);
-			i++;
-		}
+		f(i, &s[i]);
+		i++;
 	}
 }
