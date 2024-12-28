@@ -6,7 +6,7 @@
 /*   By: mlata <mlata@student.42warsaw.pl>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 19:44:35 by mlata             #+#    #+#             */
-/*   Updated: 2024/12/28 20:22:04 by mlata            ###   ########.fr       */
+/*   Updated: 2024/12/28 22:50:47 by mlata            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			current = current->next;
 		current->next = new;
 	}
-
 }
