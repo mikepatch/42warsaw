@@ -7,6 +7,9 @@
 	"files.insertFinalNewline": true,
 	"editor.formatOnSave": false,
 	"files.associations": {
-		"libft.h": "c"
+		"*.embeddedhtml": "html",
+		"*.ejs": "html",
+		"libft.h": "c",
+		"ft_printf.h": "c"
 	}
 }
