@@ -2,5 +2,3 @@
 *.o
 *.a
 *.so
-libft/libftTester/
-libft-unit-test/
